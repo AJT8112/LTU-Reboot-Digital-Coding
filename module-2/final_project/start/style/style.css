@@ -1,3 +1,22 @@
 body{
-    background-color: yellow;
+    background-color: black;
+}
+div{
+    background-color: grey;
+}
+header img.logo{
+    max-width: 200px;
+    display:block;
+    margin:0 auto;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
