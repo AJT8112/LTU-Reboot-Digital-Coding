@@ -9,14 +9,36 @@ header img.logo{
     display:block;
     margin:0 auto;
 }
+section .userInterface{
+    padding: 30px;
+}
 .buttonContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 20px;
 }
 .inputContainer{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
+}
+main{
+    width: calc(75% - 40px);
+    float: left;
+    padding: 20px;
+    background-color: red;
+
+}
+aside{
+    width: calc(25% - 40px);
+    float: left;
+    padding: 20px;
+    background-color: blue;
+}
+@media only screen and (max-width: 900px){
+    main, body{
+        float: none;
+        width: calc(100% - 40px);
+    }
 }
