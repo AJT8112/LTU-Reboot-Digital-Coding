@@ -24,21 +24,40 @@ section .userInterface{
     padding: 20px;
 }
 main{
-    width: calc(75% - 40px);
+    font-family: sans-serif;
+    width: calc(75% - 48px);
     float: left;
     padding: 20px;
-    background-color: red;
-
+    background-color: lightgray;
+    border: solid;
+    border-color: lightsalmon;
+    border-width: 2px;
 }
 aside{
-    width: calc(25% - 40px);
+    font-family: sans-serif;
+    width: calc(25% - 48px);
     float: left;
     padding: 20px;
-    background-color: blue;
+    background-color: lightgray;
+    border: solid;
+    border-color: lightsalmon;
+    border-width: 2px;
 }
 @media only screen and (max-width: 900px){
-    main, body{
+    main, aside{
         float: none;
-        width: calc(100% - 40px);
+        width: calc(100% - 48px);
     }
+}
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imageContainer div{
+    max-width:calc(25% - 20px);
+    padding: 10px;
+}
+.imageContainer div img{
+    max-width: 100%;
 }
