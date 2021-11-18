@@ -12,9 +12,15 @@ header{
     align-items: center;
 }
 
+li :hover{
+    color: hotpink;
+}
 header ol{
     display: flex;
     justify-content: space-evenly;
     width: 380px;
     list-style-type: none;
+}
+
+.logo{
 }
