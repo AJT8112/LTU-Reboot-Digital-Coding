@@ -135,3 +135,13 @@ console.log(sum2);
 console.log(sum3);
 console.log(sum4);
 console.log(sum5);
+
+let arrProductData = [
+    productName,
+    price,
+    quantity,
+    inStock,
+    discountAmount, 
+];
+
+console.log(arrProductData);
