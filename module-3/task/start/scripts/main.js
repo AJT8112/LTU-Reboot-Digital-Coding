@@ -145,3 +145,39 @@ let arrProductData = [
 ];
 
 console.log(arrProductData);
+console.log(arrProductData[0]);
+console.log(arrProductData[4]);
+
+let objProductData = {
+    'productName':productName,
+    'price':price,
+    'quantity':quantity,
+    'inStock':inStock,
+    'discountAmount':discountAmount, 
+};
+
+console.log(objProductData);
+
+console.log(objProductData.productName)
+objProductData['productName'] = ["Egg Mayo Sandwhiches"];
+console.log(objProductData.productName);
+
+objProductData.alexSample1 = 'This is new Data 1';
+objProductData["alexSample2"] = 'This is new Data';
+console.log(objProductData);
+
+function outputTimesTables(number){
+    for(
+        counter=1;
+        counter<=12;
+        counter++
+    ){
+        let sum = counter * number;
+        let strMessage = counter + ' * ' + number + ' = ' + sum;
+        console.log(strMessage);
+    }
+}
+for(multiplier=1;multiplier<=12;multiplier++){
+    outputTimesTables(multiplier);
+}
+
