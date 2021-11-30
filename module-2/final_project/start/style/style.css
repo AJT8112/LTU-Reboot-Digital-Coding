@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(112, 204, 169);
 }
 div{
     background-color: grey;
@@ -60,4 +60,8 @@ aside{
 }
 .imageContainer div img{
     max-width: 100%;
+}
+
+.hide{
+    display: none;
 }
