@@ -9,6 +9,9 @@ header img.logo{
     display:block;
     margin:0 auto;
 }
+header{
+    background-color: black;
+}
 section .userInterface{
     padding: 30px;
 }
@@ -64,4 +67,8 @@ aside{
 
 .hide{
     display: none;
+}
+
+.clicked{
+    border:1px solid red;
 }

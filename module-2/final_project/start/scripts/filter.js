@@ -2,9 +2,13 @@ console.log('Alex');
 
 let buttons = document.querySelectorAll('.animalFilter');
 let images = document.querySelectorAll('.imageFilter');
+let textSearchInput = document.querySelector('.textSearchInput');
 
 // console.log(buttons);
 // console.log(images);
+//console.log(textSearchInput);
+let searchString;
+let animal = 'all';
 
 buttons.forEach(function(button){
    // console.log(button)
@@ -26,4 +30,25 @@ buttons.forEach(function(button){
             }
         })
    })
+});
+
+textSearchInput.addEventListener('keyup',function(event){
+    let searchString = event.target.value;
+    //console.log(searchString);
+    console.log(searchString);
+    images.forEach(function(image){
+        let captionElement = image.parentElement;
+        //console.log(image.parentElement);
+        let caption = captionElement.textContent.trim();
+        // console.log(caption);
+        image.parentElement.classList.add('hide');
+        if(caption.indexOf(searchString) !== -1){
+            console.log(caption.indexOf(searchString));
+            //show current image
+            //console.log(image);
+            if(image.parentElement.classList.contains('hide')){
+                image.parentElement.classList.remove('hide');
+            }
+        }
+    });
 });
